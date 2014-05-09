@@ -1,0 +1,1 @@
+	<p><strong>Jx Soluções</strong><br> (51) 96655842 || julio.fg@live.de<br><a href="http://www.jxsolucoes.com.br" target="_blank">www.jxsolucoes.com.br</a></p>

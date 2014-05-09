@@ -1,0 +1,254 @@
+@charset "utf-8";
+/*
+* 
+* Jx Solucoes
+* www.jxsolucoes.com.br
+* (51) 9665 5842
+* julio.fg1986@gmail.com
+* 
+*/
+	 
+
+/*############## DEFAULT SETTINGS ################*/
+@font-face{
+    font-family:'Calibri Regular';
+    src:url('fonts/calibri-webfont.eot');
+    src:url('fonts/calibri-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calibri-webfont.woff') format('woff'),
+         url('fonts/calibri-webfont.ttf') format('truetype'),
+         url('fonts/calibri-webfont.svg#CalibriRegular') format('svg');
+    font-weight:normal;
+    font-style:normal;
+
+}
+
+@font-face{
+    font-family:'Calibri Bold';
+    src:url('fonts/calibrib-webfont.eot');
+    src:url('fonts/calibrib-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/calibrib-webfont.woff') format('woff'),
+         url('fonts/calibrib-webfont.ttf') format('truetype'),
+         url('fonts/calibrib-webfont.svg#CalibriBold') format('svg');
+    font-weight:normal;
+    font-style:normal;
+}
+/*############## STRUCTURE ################*/
+body{
+	color:#222032;
+	background-color:#FFD;
+	/*background:url(../img/bg_body.png);*/
+	margin:0;
+}
+/*############## GENERAL ################*/
+*{
+	border:none;
+	margin:0;
+	padding:0;
+	font-family:'Calibri', 'Calibri Regular', Arial, Helvetica;
+	
+}
+a, li, ul{
+	list-style:none;
+	text-decoration:none;
+}
+.clear{
+	height:1px;
+	clear:both;
+	display:block;
+	margin-top:-1px;
+	overflow:hidden;
+}
+.sprite{
+	text-indent:-9000px;
+	display:block;
+	background:url(../img/main.png) no-repeat;
+}
+button.btn, input.btn{
+    background:url("../img/bg_main.png") repeat;
+    color:#FFFFFF;
+    cursor:pointer;
+    padding:4px 20px 4px 20px;
+}
+button.more{
+	
+}
+button.btn:HOVER{
+	background:#222032;
+	color:#FBB912;
+	box-shadow:1px 2px 3px #666;
+}
+#error-message{
+	background:#999999;
+	padding:0px 50px;
+	width:260px;
+}
+.navbar-inner.bg-blue{
+    background:none;
+    border:none;
+    border-radius:0;
+}
+header, footer{
+    background:url("../img/bg_main.png") repeat transparent;
+}
+/*############## HEADER ################*/
+h1, h1 a{
+	cursor:pointer;
+	float:left;
+	height:44px;
+	width:220px;
+}
+nav{
+    float:right;
+    margin-top:35px;
+}
+nav a{
+	color:#FFF;
+	margin-left:15px;
+}
+nav a:hover{
+	text-decoration:underline;
+}
+nav a.active{
+	text-decoration:underline;
+	color:#FBB912;
+	cursor:default;
+}
+/*############## CONTENT ################*/
+.page-main-content{
+    margin:75px auto;
+}
+#home .page-main-content{
+    margin-bottom:10px;
+}
+h2{
+    font-size:28px;
+    margin-bottom:10px;
+}
+.content-sidebar{
+	margin-bottom:30px;
+}
+.content-sidebar h4{
+	font-weight:normal;
+	font-size:18px;
+	padding-right:40px;
+}
+.content-sidebar h4 a{
+	color:#222032;
+	cursor:pointer;
+	font-size:18px;
+}
+.content-sidebar h4 a.active{
+	color:#FBB912;
+	padding-left:15px;
+}
+.content-sidebar h4 a:HOVER{
+	color:#FBB912;
+	padding-left:5px;
+}
+.content-sidebar p,
+.content-sidebar button{
+    margin-top:25px;
+}
+/*
+.content-main{
+	float:right;
+	width:700px;
+}
+*/
+
+.content-main h4{
+    font-size:22px;
+    margin-bottom:10px;
+}
+#empresa .content-main figure{
+	float:right;
+}
+.content-main ul{margin-left:0}
+.content-main ul.tab li{
+    background:none repeat scroll 0 0 #FFFFFF;
+    float:left;
+    margin:0 4px 4px 0;
+    min-width:220px;
+}
+.content-main ul.tab li a{
+    display:block;
+    padding:3px;
+    text-align:center;
+}
+.content-main ul.tab li a img{
+	max-width:210px;
+	max-height:140px;
+}
+.content-main ul.pagination{
+	border: 1px solid #DDD;
+	border-radius:4px;
+	background: #FFF;
+	display: table;
+	padding: 3px 0;
+}
+.content-main ul.pagination li{
+	display: inline;
+}
+.content-main ul.pagination li a{
+	padding: 5px;
+}
+.content-main ul.pagination li a:hover{
+	background: #DDD;
+}
+/*############## FOOTER ################*/
+
+footer div.span3{
+	height:60px;
+	margin-top:15px;
+}
+footer div.span3:first-child{margin-left:0}
+footer div.span3 div{
+	width:250px;
+	color:#FFF;
+	height:70px;
+	vertical-align:middle;
+}
+footer div.span3 div small{
+    height:50px;
+    width:50px;
+    float:left;
+}
+footer .address small{background-position:-250px 3px}
+footer .address address{padding-top:5px}
+footer .phone small{background-position:-250px -70px}
+footer .email small{background-position:-250px -125px}
+footer .copy small{background-position:-250px -190px}
+footer div.span3 div span{padding:10px 0}
+footer div.span3 div span a{color:#EEEEEE;font-weight:bolder}
+
+/*############## PAGES ################*/
+
+/* HOME */
+
+#carousel .carousel-caption{background:none}
+#carousel .carousel-caption h4{color:#222032}
+#featured article button{margin-left:60%;margin-bottom:30px}
+/* CONTATO */
+#contato form{
+	max-width:500px;
+}
+#contato .content-sidebar h4{
+	margin-bottom:15px;
+	font-weight:normal;
+	font-size:16px;
+}
+#contato form legend{
+    font-size:16px;
+    font-weight:bold;
+    line-height:22px;
+    margin-bottom:15px;
+    border:none;
+}
+#contato .content-main input{
+	width:220px;
+	margin-right:8px;
+}
+#contato textarea{
+	width:465px;
+}
+#contato .content-main input.btn{float:right;margin-right:20px}

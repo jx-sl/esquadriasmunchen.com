@@ -1,0 +1,212 @@
+@charset "utf-8";
+/*
+* 
+* Jx Solucoes
+* www.jxsolucoes.com.br
+* (51) 9665 5842
+* julio.fg1986@gmail.com
+* 
+*/
+
+/*############## STRUCTURE ################*/
+body{
+	color:#222032;
+	/*background-color:#FFD;
+	background:url(../img/bg_body.png);*/
+	margin:0;
+}
+.adm-btn{
+	background:url(../img/admin_sprite.png);
+	display:block;
+	text-indent:-9000px;
+}
+.adm-btn.insert{
+    background-color: #222032;
+    background-position: 190px -100px;
+    border-radius: 4px 4px 4px 4px;
+    color: #FFFFFF;
+    font-size: 24px;
+    height: 30px;
+    margin-bottom: 25px;
+    padding-right: 50px;
+    text-indent: 20px;
+    width: 170px;
+}
+.adm-btn.insert:HOVER{
+	background-color: #222066;
+	box-shadow:3px 3px 3px #FFF;
+}
+.adm-btn.edita, .adm-btn.exclui, .adm-btn.active, .adm-btn.inactive{
+	width: 34px;
+	height:34px;
+}
+.adm-btn.exclui:HOVER{background-position: 0 -50px}
+.adm-btn.edita {background-position: -50px 0}
+.adm-btn.edita:HOVER {background-position: -50px -50px}
+.adm-btn.active{background-position: -300px 0}
+.adm-btn.inactive{background-position: -350px 0}
+.adm-btn.back {
+    background-color: #FFFFFF;
+    background-position: -189px -101px;
+    border: 1px solid #222032;
+    border-radius: 4px 4px 4px 4px;
+    color: #222032;
+    font-size: 24px;
+    height: 30px;
+    margin: 25px;
+    padding-right: 50px;
+    text-indent: 15px;
+    width: 250px;
+}
+/*############## GENERAL ################*/
+*{
+	border:none;
+	margin:0;
+	padding:0;
+	font-family:'Calibri', 'Verdana', Arial, Helvetica;
+}
+a, li, ul{
+	list-style:none;
+	text-decoration:none;
+}
+.clear{
+	height:1px;
+	clear:both;
+	display:block;
+	margin-top:-1px;
+	overflow:hidden;
+}
+.sprite{
+	text-indent:-9000px;
+	display:block;
+	background:url(../img/main.png) no-repeat;
+}
+button.adm-btn, input.adm-btn {
+    background: url("../img/bg_main.png") repeat;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 4px 20px 4px 20px;
+}
+button.more{
+	
+}
+button.adm-btn:HOVER{
+	background:#222032;
+	color:#FBB912;
+	box-shadow:1px 2px 3px #666;
+}
+#error-message{
+	background: #999999;
+	padding: 0px 50px;
+	width: 260px;
+}
+header, footer{
+	background:#1b1b1b;
+}
+/*############## FOOTER ################*/
+footer.footer{
+	text-align:center;
+	color:#FFF;
+}
+footer.footer p{
+	padding:7px 0;
+}
+/*############## HEADER ################*/
+h1, h1 a{
+	cursor:pointer;
+	float:left;
+	height:44px;
+	width:220px;
+}
+nav {
+    float:right;
+    margin-top:35px;
+}
+nav a{
+	color:#FFF;
+	margin-left:15px;
+}
+nav a:hover{
+	text-decoration:underline;
+}
+nav a.active{
+	text-decoration: underline;
+	color:#FBB912;
+	cursor:default;
+}
+/*############## CONTENT ################*/
+
+.page-main-content {
+    margin: 65px auto;
+}
+.page-main-content ul li a {
+	width: 220px;
+	text-align: center;
+	display: block;
+}
+.content-main ul{margin-left:0}
+.content-main ul li {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    margin: 0 4px 4px 0;
+}
+.content-main ul li a {
+    display: block;
+    padding: 3px;
+    text-align: center;
+}
+.content-main ul li a img{
+	max-width: 210px;
+	max-height:140px;
+}
+
+/*############## PAGES ################*/
+table.table{
+	margin:15px 0;
+}
+/* LOGIN */
+#login fieldset {
+	background: none repeat scroll 0 0 #222032;
+	border: 5px ridge #DDDDDD;
+	color: #FFFFFF;
+	display: block;
+	font-size: 16px;
+	margin: auto;
+	padding: 10px;
+	width: 300px;
+}
+
+#login fieldset legend {
+	background: none repeat scroll 0 0 #222032;
+	border: 2px ridge #DDDDDD;
+	padding: 5px;
+}
+form p.send {
+	margin-top: 15px;
+}
+
+form p.send input {
+	width: 70px;
+	border: 1px ridge #DDDDDD;
+}
+
+#login form p.send input:HOVER {
+	border: 2px ridge #BBBBBB;
+}
+
+#login form p.send input:FOCUS {
+	border: 4px ridge #AAAAAA;
+}
+
+#login form p.input-item {
+	height: 35px;
+	width: 270px;
+}
+
+#login form p input,#login form p textarea {
+	border: 1px solid #CCCCDD;
+	font-size: 14px;
+	height: 25px;
+	padding: 0 8px;
+	width: 275px;
+}

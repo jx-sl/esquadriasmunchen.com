@@ -1,0 +1,33 @@
+In heroku website, go to My Apps and select the app on which you have installed ClearDB.
+
+On the top corner click on Addons and then select ClearDB MySQL Database. Once there, click on your database and choose the 'Endpoint Information' tab. There you see your username/password. The URL to the database can be acquired by running heroku config --app
+
+In my case, it was something like: mysql://user:pass@us-cdbr-east.cleardb.com/TABLE?reconnect=true What you need is this part: us-cdbr-east.cleardb.com
+#############################################
+mysql://b84d965fda44ed:6dec6dc3@us-cdbr-east-02.cleardb.com/heroku_e8330c1748db5f3?reconnect=true
+
+SERVER: us-cdbr-east-02.cleardb.com
+
+Username: 	b84d965fda44ed
+Password: 	6dec6dc3
+
+
+<?php
+	if($_SERVER['HTTP_HOST']=="localhost"){
+		$connect = mysql_connect("localhost", "root", "");
+		if(!$connect)
+			die("Erro ao conectar banco de dados!");
+		
+		$query = mysql_select_db("siteMunchen");
+		if(!$query)
+			die("Erro ao selecionar banco de dados!");
+
+	}else{
+		$url=parse_url(getenv("CLEARDB_DATABASE_URL"));
+		$server = $url["host"];
+		$username = $url["user"];
+		$password = $url["pass"];
+		$db = substr($url["path"],1);
+		mysql_connect($server, $username, $password);
+		mysql_select_db($db);
+	}
