@@ -11,11 +11,11 @@ class Database{
 			if(!$query)
 				die("Erro ao selecionar banco de dados!");
 		}else{
-			$connect = mysql_connect("localhost", "root", "juliao123");		
+			$connect = mysql_connect("localhost", "munchen", "ebagu3e4e");		
 			if(!$connect)
 				die("Erro ao conectar banco de dados!");
 			
-			$query = mysql_select_db("db_esquadriasmunchen");
+			$query = mysql_select_db("zadmin_esquadriasmunchen");
 			if(!$query)
 				die("Erro ao selecionar banco de dados!");		
 		}
