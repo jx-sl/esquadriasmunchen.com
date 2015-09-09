@@ -1,6 +1,6 @@
 <?php
 if($_SERVER['HTTP_HOST']=="localhost"){
-	$connect = mysql_connect("localhost", "root", "");
+	$connect = mysql_connect("#", "#", "#");
 	if(!$connect)
 		die("Erro ao conectar banco de dados!");
 
@@ -9,7 +9,7 @@ if($_SERVER['HTTP_HOST']=="localhost"){
 		die("Erro ao selecionar banco de dados!");
 	mysql_set_charset('utf8', $connect);
 }else{
-	$connect = mysql_connect("localhost", "root", "juliao123");
+	$connect = mysql_connect("#", "#", "#");
 	if(!$connect)
 		die("Erro ao conectar banco de dados!");
 
